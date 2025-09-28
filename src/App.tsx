@@ -31,7 +31,8 @@ interface KycRecord {
 const isProd = import.meta.env.PROD;
 const API_BASE = import.meta.env.VITE_API_BASE || "";
 // In development we use the local JSON; in production, fetch from API `${API_BASE}/v1/kycrecord`
-const DATA_URL = isProd ? `${API_BASE.replace(/\/$/, "")}/v1/kycrecord` : "/data/KYC_Status_with_audit_revised.json";
+//const DATA_URL = isProd ? `${API_BASE.replace(/\/$/, "")}/v1/kycrecord` : "/data/KYC_Status_with_audit_revised.json";
+const DATA_URL = "/data/KYC_Status_with_audit_revised.json";
 
 
 function toDisplayId(rec: KycRecord): string {
