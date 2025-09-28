@@ -112,6 +112,8 @@ export default function App() {
   const docBaseUrl = "/docs"; // change to your bucket/CDN
 
   return (
+      <div className="p-4 md:p-6 space-y-6">
+        <h1 className="text-2xl font-bold tracking-tight">KYC Document Processor</h1>
   
           <div className="p-4 md:p-6 grid grid-cols-1 md:grid-cols-12 gap-4">
                 <div className="md:col-span-4 lg:col-span-3">
@@ -180,6 +182,7 @@ export default function App() {
                   </Card>
                 </div>
           </div>
+        </div>
 
   ); 
 
